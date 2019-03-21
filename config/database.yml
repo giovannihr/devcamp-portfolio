@@ -86,4 +86,4 @@ production:
   <<: *default
   database: DevcampPortfolio_production
   username: postgres
-  password: 1234
+  password: <%= ENV["PROD_PASSW"] %>
